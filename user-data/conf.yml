@@ -1,24 +1,481 @@
+---
+# ╔══════════════════════════════════════════════════════════╗
+# ║  Dashy Config — Rajath Kiran A  |  dashyr.netlify.app  ║
+# ║  6th Sem CSE @ VCET Puttur  |  Full Stack + AI Builder ║
+# ╚══════════════════════════════════════════════════════════╝
+
 pageInfo:
-  title: Raj's Dashboard
-  description: My personal start page
+  title: "Rajath's Dashboard"
+  description: "6th Sem CSE @ VCET · Full Stack · Cloud · AI/ML"
+  navLinks:
+    - title: Portfolio
+      path: https://rajathkiran.netlify.app/
+    - title: GitHub
+      path: https://github.com/Rajath2005
+    - title: LinkedIn
+      path: https://www.linkedin.com/in/rajath-kiran/
+  footerText: "Built with ❤️ by Rajath Kiran A — Puttur, Mangalore 🇮🇳"
 
 appConfig:
-  theme: colorful
+  theme: material-dark
   layout: auto
+  iconSize: medium
+  language: en
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: true
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  enableFontAwesome: true
+  fontAwesomeKey: ""
+  hideComponents:
+    hideSettings: false
+    hideFooter: false
+  showSplashScreen: false
+  enableMultiTasking: false
 
 sections:
-  - name: Development
+
+  # ─── 🚀 MY LIVE PROJECTS ───────────────────────────────────
+  - name: "🚀 My Live Projects"
+    icon: fas fa-rocket
+    displayData:
+      cols: 2
+      rows: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: MediQ – Ayurvedic Health
+        description: Ayurvedic healthcare platform with AI integration & appointment booking
+        icon: fas fa-heartbeat
+        url: https://mediq-health.netlify.app/
+        target: newtab
+        tags: [healthcare, ai, react]
+        statusCheck: true
+
+      - title: AyuDost AI Chatbot
+        description: AI-powered Ayurvedic support chatbot (NLP + RAG)
+        icon: fas fa-robot
+        url: https://ayudost-chatbot.onrender.com/
+        target: newtab
+        tags: [ai, chatbot, nlp]
+        statusCheck: true
+
+      - title: Englisho – Dictionary App
+        description: Interactive English learning platform with gamified experience
+        icon: fas fa-book-open
+        url: https://englisho.netlify.app/
+        target: newtab
+        tags: [edtech, react, learning]
+        statusCheck: true
+
+      - title: React Lab
+        description: React experiments and UI practice projects — live playground
+        icon: fab fa-react
+        url: https://reactlabexp.netlify.app/
+        target: newtab
+        tags: [react, frontend, experiments]
+        statusCheck: true
+
+      - title: ML Lab
+        description: Machine learning experiments and demos in a web lab
+        icon: fas fa-brain
+        url: https://ml-lab-seven.vercel.app/
+        target: newtab
+        tags: [ml, python, experiments]
+        statusCheck: true
+
+      - title: LaTeX Lab Manuals
+        description: Lab manuals and experiment documentation in LaTeX
+        icon: fas fa-file-alt
+        url: https://latex-lab-manuals.vercel.app/
+        target: newtab
+        tags: [docs, latex, academic]
+        statusCheck: true
+
+      - title: Sitexar – Startup Site
+        description: Freelance startup site built by a six-member team
+        icon: fas fa-globe
+        url: https://sitexar.netlify.app/
+        target: newtab
+        tags: [team, freelance, web]
+        statusCheck: true
+
+      - title: Puttur Bus
+        description: Local bus route info and schedules for Puttur, Karnataka
+        icon: fas fa-bus
+        url: https://putturbus.netlify.app/
+        target: newtab
+        tags: [local, utility, web]
+        statusCheck: true
+
+      - title: Placement Prep
+        description: Placement prep resources and practice tools for students
+        icon: fas fa-briefcase
+        url: https://placement-bug.netlify.app/
+        target: newtab
+        tags: [placement, prep, students]
+        statusCheck: true
+
+      - title: Digital Restaurant Menu
+        description: QR-based digital menu solution (GitHub Pages)
+        icon: fas fa-utensils
+        url: https://rajath2005.github.io/hotel-menu.io/
+        target: newtab
+        tags: [saas, qr, web]
+        statusCheck: true
+
+  # ─── 💻 DEV TOOLS & CODING ─────────────────────────────────
+  - name: "💻 Dev Tools & Coding"
     icon: fas fa-code
+    displayData:
+      cols: 3
+      collapsed: false
     items:
       - title: GitHub
+        description: Rajath2005 — 55 repos, 39 stars, open source
         icon: fab fa-github
-        url: https://github.com
-      - title: Netlify
-        icon: fas fa-cloud
-        url: https://app.netlify.com
+        url: https://github.com/Rajath2005
+        target: newtab
 
-  - name: Tools
+      - title: LeetCode
+        description: "@rajath2005 — Daily DSA grind"
+        icon: fas fa-code
+        url: https://leetcode.com/u/rajath2005/
+        target: newtab
+
+      - title: Code360 (2× VTU Rank #1)
+        description: VTU Topper — 30-Day Monthly Coding Challenge × 2
+        icon: fas fa-trophy
+        url: https://www.naukri.com/code360/profile/rajathajeru
+        target: newtab
+
+      - title: HackerRank
+        description: "@rajathajeru — Practice & certifications"
+        icon: fab fa-hackerrank
+        url: https://www.hackerrank.com/@rajathajeru
+        target: newtab
+
+      - title: NeetCode
+        description: "@rajath2005 — Structured DSA roadmap"
+        icon: fas fa-sitemap
+        url: https://neetcode.io/rajath2005
+        target: newtab
+
+      - title: TakeUForward
+        description: "@Rajathajeru — Striver's SDE sheet progress"
+        icon: fas fa-layer-group
+        url: https://takeuforward.org/profile/Rajathajeru
+        target: newtab
+
+      - title: VS Code (Web)
+        description: Code anywhere — browser-based VS Code
+        icon: fas fa-laptop-code
+        url: https://vscode.dev/
+        target: newtab
+
+      - title: GitHub Gist
+        description: Quick snippets and code notes
+        icon: fas fa-sticky-note
+        url: https://gist.github.com/Rajath2005
+        target: newtab
+
+      - title: Excalidraw
+        description: Whiteboard — system design, architecture diagrams
+        icon: fas fa-draw-polygon
+        url: https://excalidraw.com/
+        target: newtab
+
+  # ─── ☁️ CLOUD & DEVOPS ─────────────────────────────────────
+  - name: "☁️ Cloud & DevOps"
+    icon: fas fa-cloud
+    displayData:
+      cols: 3
+      collapsed: false
     items:
-      - title: Gmail
+      - title: Google Cloud Console
+        description: GCP projects, VMs, Kubernetes, and more
+        icon: fab fa-google
+        url: https://console.cloud.google.com/
+        target: newtab
+
+      - title: Google Arcade Profile
+        description: Silver League — 19 badges & counting 🏅
+        icon: fas fa-medal
+        url: https://www.skills.google/public_profiles/09886862-52b8-44a4-86a5-9559a3952dd0
+        target: newtab
+
+      - title: Netlify Dashboard
+        description: Deploy and manage all your Netlify projects
+        icon: fas fa-bolt
+        url: https://app.netlify.com/
+        target: newtab
+
+      - title: Vercel Dashboard
+        description: ML Lab, LaTeX Manuals — serverless deployments
+        icon: fas fa-triangle
+        url: https://vercel.com/dashboard
+        target: newtab
+
+      - title: Render
+        description: AyuDost chatbot backend — web services
+        icon: fas fa-server
+        url: https://dashboard.render.com/
+        target: newtab
+
+      - title: Docker Hub
+        description: Container images and registry
+        icon: fab fa-docker
+        url: https://hub.docker.com/
+        target: newtab
+
+      - title: GitHub Actions
+        description: CI/CD pipelines for your repos
+        icon: fas fa-cogs
+        url: https://github.com/Rajath2005?tab=repositories
+        target: newtab
+
+      - title: HuggingFace Space
+        description: Code Review Env — RL benchmark for AI agents
+        icon: fas fa-robot
+        url: https://huggingface.co/spaces/BugHunter28/code-review-env
+        target: newtab
+
+  # ─── 🎨 DESIGN & FIGMA ─────────────────────────────────────
+  - name: "🎨 Design & UI/UX"
+    icon: fas fa-paint-brush
+    displayData:
+      cols: 3
+      collapsed: false
+    items:
+      - title: Figma
+        description: "@rajath4 — IEEE UI/UX, Dictionary Design & more"
+        icon: fab fa-figma
+        url: https://www.figma.com/@rajath4
+        target: newtab
+
+      - title: IEEE Figma File
+        description: IEEE Web UI/UX concept — Figma Community
+        icon: fas fa-microchip
+        url: https://www.figma.com/community/file/1632301825171230889
+        target: newtab
+
+      - title: Englisho Dictionary UI
+        description: Clean, accessible dictionary interface design
+        icon: fas fa-spell-check
+        url: https://www.figma.com/design/QRtBz3nZ6HC2XyFsr2Uel9/Englisho-Website
+        target: newtab
+
+      - title: Canva
+        description: Social media content, reels, carousel posters
+        icon: fas fa-palette
+        url: https://www.canva.com/
+        target: newtab
+
+      - title: Uizard – Fundo App
+        description: Fintech app prototype in Uizard
+        icon: fas fa-mobile-alt
+        url: https://app.uizard.io/p/f3e41449
+        target: newtab
+
+      - title: Visily Portfolio Prototype
+        description: High-fidelity portfolio UI prototype
+        icon: fas fa-vector-square
+        url: https://app.visily.ai/projects/ea2148b0-9edb-499f-9962-f82959d33955/boards/1605512
+        target: newtab
+
+  # ─── 📚 LEARNING & CERTIFICATIONS ──────────────────────────
+  - name: "📚 Learning & Resources"
+    icon: fas fa-graduation-cap
+    displayData:
+      cols: 3
+      collapsed: false
+    items:
+      - title: NPTEL
+        description: Joy of Computing (Python) — IIT Madras certified
+        icon: fas fa-university
+        url: https://nptel.ac.in/
+        target: newtab
+
+      - title: Google Skills Boost
+        description: Cloud & GenAI labs — Arcade badges 🏅
+        icon: fab fa-google
+        url: https://www.cloudskillsboost.google/
+        target: newtab
+
+      - title: Elements of AI
+        description: Certified — AI fundamentals course
+        icon: fas fa-brain
+        url: https://www.elementsofai.com/
+        target: newtab
+
+      - title: freeCodeCamp
+        description: Responsive Web Design — Certified
+        icon: fas fa-fire
+        url: https://www.freecodecamp.org/
+        target: newtab
+
+      - title: Infosys Springboard
+        description: Learning paths and certifications
+        icon: fas fa-infinity
+        url: https://infyspringboard.onwingspan.com/
+        target: newtab
+
+      - title: MDN Web Docs
+        description: HTML, CSS, JS reference — always open
+        icon: fab fa-firefox-browser
+        url: https://developer.mozilla.org/
+        target: newtab
+
+      - title: React Docs
+        description: Official React documentation
+        icon: fab fa-react
+        url: https://react.dev/
+        target: newtab
+
+      - title: LangChain Docs
+        description: LLM integration & AI agent development
+        icon: fas fa-link
+        url: https://docs.langchain.com/
+        target: newtab
+
+      - title: System Design Primer
+        description: GitHub — scalability and system design patterns
+        icon: fas fa-project-diagram
+        url: https://github.com/donnemartin/system-design-primer
+        target: newtab
+
+  # ─── ✍️ WRITING & BLOGS ─────────────────────────────────────
+  - name: "✍️ My Writing & Blog"
+    icon: fas fa-pen-fancy
+    displayData:
+      cols: 2
+      collapsed: false
+    items:
+      - title: WordPress Blog
+        description: Top 5 VS Code Extensions, AI Pros & Cons, Tech Roadmaps
+        icon: fab fa-wordpress
+        url: https://rajathpersonal28com.wordpress.com/
+        target: newtab
+
+      - title: Medium – Memory Management (OS)
+        description: Technical deep dive on OS memory management techniques
+        icon: fab fa-medium
+        url: https://medium.com/@arajath5463/memory-management-techniques-in-operating-system-eb1f53d7f1f9
+        target: newtab
+
+      - title: Hashnode
+        description: Developer blogging platform — publish tech articles
+        icon: fas fa-blog
+        url: https://hashnode.com/
+        target: newtab
+
+      - title: Dev.to
+        description: Developer community and writing platform
+        icon: fab fa-dev
+        url: https://dev.to/
+        target: newtab
+
+  # ─── 🌐 SOCIAL & NETWORKING ────────────────────────────────
+  - name: "🌐 Social & Networking"
+    icon: fas fa-users
+    displayData:
+      cols: 3
+      collapsed: false
+    items:
+      - title: LinkedIn
+        description: in/rajath-kiran — Connect for opportunities
+        icon: fab fa-linkedin
+        url: https://www.linkedin.com/in/rajath-kiran/
+        target: newtab
+
+      - title: GitHub Profile
+        description: Rajath2005 — 55 repos, open to collabs
+        icon: fab fa-github
+        url: https://github.com/Rajath2005
+        target: newtab
+
+      - title: Twitter / X
+        description: "@rajathajeru — Tech updates"
+        icon: fab fa-twitter
+        url: https://x.com/rajathajeru
+        target: newtab
+
+      - title: Telegram
+        description: "@Rajath_ajeru — Direct message"
+        icon: fab fa-telegram
+        url: https://t.me/Rajath_ajeru
+        target: newtab
+
+      - title: Email
+        description: rajathajeru@gmail.com — < 24hr response
         icon: fas fa-envelope
-        url: https://mail.google.com
+        url: mailto:rajathajeru@gmail.com
+        target: newtab
+
+      - title: Portfolio
+        description: rajathkiran.netlify.app — full personal site
+        icon: fas fa-user-circle
+        url: https://rajathkiran.netlify.app/
+        target: newtab
+
+  # ─── 🛠️ PRODUCTIVITY & UTILITIES ───────────────────────────
+  - name: "🛠️ Productivity"
+    icon: fas fa-tools
+    displayData:
+      cols: 3
+      collapsed: false
+    items:
+      - title: Notion
+        description: Notes, study plans, project management
+        icon: fas fa-sticky-note
+        url: https://www.notion.so/
+        target: newtab
+
+      - title: Google Calendar
+        description: Schedule, deadlines, college timetable
+        icon: fas fa-calendar-alt
+        url: https://calendar.google.com/
+        target: newtab
+
+      - title: Google Drive
+        description: College notes, resume, certificates storage
+        icon: fab fa-google-drive
+        url: https://drive.google.com/
+        target: newtab
+
+      - title: ChatGPT
+        description: AI assistant for quick questions & ideation
+        icon: fas fa-comment-dots
+        url: https://chat.openai.com/
+        target: newtab
+
+      - title: Perplexity AI
+        description: Research and technical queries
+        icon: fas fa-search
+        url: https://www.perplexity.ai/
+        target: newtab
+
+      - title: Ray.so
+        description: Beautiful code screenshots for sharing
+        icon: fas fa-image
+        url: https://ray.so/
+        target: newtab
+
+      - title: JSON Formatter
+        description: Quick JSON formatting & validation
+        icon: fas fa-brackets-curly
+        url: https://jsonformatter.curiousconcept.com/
+        target: newtab
+
+      - title: Regex101
+        description: Build, test, and debug regular expressions
+        icon: fas fa-asterisk
+        url: https://regex101.com/
+        target: newtab
+
+      - title: Resume (PDF)
+        description: Download my latest resume
+        icon: fas fa-file-pdf
+        url: https://rajathkiran.netlify.app/assets/Resume.pdf
+        target: newtab
