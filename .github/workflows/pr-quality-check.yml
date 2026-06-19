@@ -18,7 +18,7 @@ jobs:
       lockfile: ${{ steps.filter.outputs.lockfile }}
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔎 Filter Paths
         uses: dorny/paths-filter@v3
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v6
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v6
@@ -71,7 +71,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v6
@@ -90,7 +90,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v6
@@ -122,7 +122,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🐳 Build & Test Docker Image
         run: sh tests/docker-smoke-test.sh
@@ -136,7 +136,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: 🛎️ Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v6
